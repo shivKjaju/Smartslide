@@ -1,0 +1,399 @@
+body{
+    height: 100%;
+    margin: 0;
+}
+
+.BgImg{
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.BgImg1 {
+    background-image: url("e9ca1132113221.566fc205a9549.jpg");
+    /*background-image: url("CV.PNG");*/
+    width: 100%;
+    min-height: 350px;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.BgImg3 {
+    background-image: url("CV2.jpg");
+    /*background-image: url("CV.PNG");*/
+    width: 100%;
+    min-height: 350px;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.BgImg2 {
+    background-image: url("women_books_students_workstation_studying_1920x1200_wallpaper_Wallpaper HD_2560x1600_www.paperhi.com.jpg");
+    height: 120vh;
+    opacity: 0.8;
+}
+
+.I{
+    color: #000;
+    text-align: center;
+    top: 48.7vh;
+    position: absolute;
+    left: 36vw;
+    letter-spacing: 1px;
+    opacity: 0.9; !important;
+    z-index: 1;
+}
+
+.a1{
+    color: white;
+    padding: 18px;
+    font-size: x-large;
+    /*top: 500px;*/
+    text-align: center;
+    background-color: #000000;
+    /*left: 200px;*/
+    opacity: 1;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.I:hover .a1{
+    padding: 25px;
+    font-size: xx-large;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.7s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 22%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    margin: -75px 0 0 -75px;
+    border: 7px solid #f3f3f3f3;
+    border-radius: 100%;
+    border-top: 7px solid #555;
+    border-bottom: 7px solid #222222;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+    /*color:  ;*/
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from { bottom:-200px; opacity:0 }
+    to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+    from{ bottom:-200px; opacity:0 }
+    to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+    display: none;
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
+
+li input{
+    display: none;
+}
+
+li.edit input{
+    display: initial;
+}
+
+li.edit span{
+    display: none;
+}
+
+.nav{
+    font-size:20px;
+    cursor:pointer;
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    z-index: 101;
+    background-color: black;
+    opacity: 0.3;
+}
+
+.nav1{
+    position: fixed;
+    z-index: 100;
+}
+
+
+.I1{
+    color: #000;
+    text-align: center;
+    top: 2%;
+    position: fixed;
+    left: 2%;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    z-index: 1;
+    transition: 2s!important;
+
+}
+
+.a2{
+    color: white;
+    padding: 10px;
+    font-size: x-large;
+    text-align: center;
+    background-color: #333333;
+    opacity: 1; !important;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.I1:hover{
+    opacity: 1;
+    transition: 1s;
+}
+
+.NavHid{
+    display: none;
+    transition: 1s;
+    font-size: small;
+}
+
+.I1:hover .NavHid{
+    display: inherit;
+    transition: 1s;
+}
+
+.s1{
+    font-size: large;
+    /*width: 800px;*/
+    text-align: center;
+    color: #888888;
+}
+
+.color{
+    color: #999999;
+}
+
+.CircleB{
+    list-style: none;
+    border-left: solid;
+    border-left-color: #888888;
+    margin: 0 0 0 0 ;
+}
+
+.Circle{
+    border-radius: 100%;
+    border-color: #999999;
+    margin-left: 0px;
+    border: solid;
+}
+
+.liB{
+    margin-left: 0;
+}
+
+.navCircle,
+.navCircle_list {
+    /* overflow: hidden; */
+    max-width: 50px;
+    margin: 0 auto;
+}
+.navCircle_list {
+    margin: 0 auto;
+    max-width: 41px;
+    display: block;
+}
+.navCircle .inCircle,
+.navCircle_list .inCircle {
+    color: #2095F2;
+    font-size: 17px;
+    display: block;
+//float: left;
+    float: none;
+    padding: 45%;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+//background: #fff;
+    text-align: center;
+    position: relative;
+    border: 2px solid #2095F2;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+.navCircle .inCircle span,
+.navCircle_list .inCircle span {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 23%;
+    line-height: 1em;
+    height: 1em;
+    overflow: hidden;
+}
+.navCircle_list:before,
+.navCircle_list:after {
+    content: "\00a0";
+    width: 2px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    height: 10px;
+    background-color: #2095F2;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+}
+.-sm_navCicle {
+    width: 5px !important;
+    height: 5px !important;
+    margin: 0 auto;
+    padding: 25% !important;
+}
+
+.txtPos{
+    position: absolute;
+    display: inline;
+}
+
+.navCircle_list{
+    /*display: inline;*/
+}
+
+.text{
+    margin-top: 7px;
+    list-style: none;
+    /*display: inline;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'IM Fell English', serif;
+    font-size: large;
+}
+
+.space1{
+    padding: 15px;
+}
+
+.space5{
+    /*margin-top: 5px;*/
+    padding: 12px;
+}
+
+.space0{
+    padding: 7px;
+}
+
+.TopB{
+    position: absolute;
+    text-align: center;
+    width: auto;
+    /*right: 1140px;*/
+    /*bottom: 170px;*/
+    left: 46%;
+    padding: 15px;
+    /*background-color: #4CAF50;*/
+    background-color: #222222;
+    box-shadow: 0 6px #999;
+    cursor: pointer;
+    border-radius: 15px;
+    /*border: groove;*/
+    z-index: 50;
+    font-family: 'IM Fell English', serif;
+}
+
+
+.TopB:hover{
+    /*background-color: #555;*/
+    background-color: tomato;
+}
+
+.TopB:active {
+    background-color: #3e8e41;
+    box-shadow: 0 3px #666;
+    transform: translateY(3px);
+}
+
